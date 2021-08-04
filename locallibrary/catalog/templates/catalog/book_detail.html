@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h1>{% translate "Title" %}: {{ book.title }}</h1>
+
+    <p><strong>{% translate "Author" %}:</strong> <a href="{{book.author.get_absolute_url}}">{{ book.author }}</a></p> <!-- author detail link not yet defined -->
+    <p><strong>{% translate "Summary" %}:</strong> {{ book.summary }}</p>
+    <p><strong>{% translate "ISBN" %}:</strong> {{ book.isbn }}</p>
+    <p><strong>{% translate "Language" %}:</strong> {{ book.language }}</p>
+    <p><strong>{% translate "Genre" %}:</strong> {{ book.genre.all|join:", " }}</p>
+
+    <div class="container">
+        <h4>{% translate "Copies" %}</h4>
+
+        {% for copy in bookinstance_list %}
+            <hr>
+            <p class="{% if copy.status == 'a' %}text-success{% elif copy.status == 'm' %}text-danger{% else %}text-warning{% endif %}">
+                {{ copy.get_status_display }}
+            </p>
+        {% if copy.status != 'a' %}
+            <p><strong>{% translate "Due to be returned" %}:</strong> {{ copy.due_back }}</p>
+        {% endif %}
+            <p><strong>{% translate "Imprint" %}:</strong> {{ copy.imprint }}</p>
+            <p class="text-muted"><strong>Id:</strong> {{ copy.id }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}

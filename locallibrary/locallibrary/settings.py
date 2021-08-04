@@ -10,16 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from django.utils.translation import ugettext_lazy as _
 from pathlib import Path
 import environ
 env = environ.Env(
-    # set casting, default value
+    # set casting, default value    
     DEBUG=(bool, False)
 )
 # reading .env file
 environ.Env.read_env()
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project like this: BASE_DIR / 'subdir'.    
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -55,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'locallibrary.urls'
@@ -112,6 +114,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+
+LANGUAGES = (
+    ('en-us', _('English')),
+    ('vi', _('Vietnamese')),
+)
 
 TIME_ZONE = 'UTC'
 
