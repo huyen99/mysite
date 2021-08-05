@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-05 16:14+0700\n"
+"POT-Creation-Date: 2021-08-05 22:26+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: forms.py:15
+msgid "Invalid date - renewal in past"
+msgstr "Ngày không hợp lệ - gia hạn trong quá khứ"
+
+#: forms.py:19
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr "Ngày không hợp lệ - gia hạn trước hơn 4 tuần"
 
 #: templates/base_generic.html:5
 msgid "Local Library"
@@ -61,6 +69,20 @@ msgstr "Trang"
 #: templates/base_generic.html:43
 msgid "next"
 msgstr "sau"
+
+#: templates/catalog/author_confirm_delete.html:6
+#, fuzzy
+#| msgid "Authors:"
+msgid "Delete Author"
+msgstr "Tác giả:"
+
+#: templates/catalog/author_confirm_delete.html:8
+msgid "Are you sure you want to delete the author"
+msgstr "Bạn có chắc chắn muốn xóa tác giả không"
+
+#: templates/catalog/author_confirm_delete.html:12
+msgid "Yes, delete."
+msgstr "Đồng ý, xoá"
 
 #: templates/catalog/author_detail.html:5 templates/catalog/book_detail.html:7
 #, fuzzy
@@ -121,6 +143,24 @@ msgstr "Danh sách sách"
 #: templates/catalog/book_list.html:15
 msgid "There are no books in the library."
 msgstr "Không có sách"
+
+#: templates/catalog/book_renew_librarian.html:5
+msgid "Renew"
+msgstr "Thay mới"
+
+#: templates/catalog/book_renew_librarian.html:6
+#, fuzzy
+#| msgid "My Borrowed"
+msgid "Borrower"
+msgstr "Sách đã mượn"
+
+#: templates/catalog/book_renew_librarian.html:7
+msgid "Due date"
+msgstr "Ngày hạn"
+
+#: templates/catalog/book_renew_librarian.html:14
+msgid "Submit"
+msgstr "Gửi"
 
 #: templates/catalog/bookinstance_list_borrowed_user.html:5
 msgid "Borrowed books"
