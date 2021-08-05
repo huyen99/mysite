@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 03:02+0000\n"
+"POT-Creation-Date: 2021-08-04 12:32+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,54 +17,122 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: catalog/templates/base_generic.html:5
+#: templates/base_generic.html:6
 msgid "Local Library"
 msgstr ""
 
-#: catalog/templates/base_generic.html:19
+#: templates/base_generic.html:26
 msgid "Home"
 msgstr ""
 
-#: catalog/templates/base_generic.html:20
+#: templates/base_generic.html:27
 msgid "All books"
 msgstr ""
 
-#: catalog/templates/base_generic.html:21
+#: templates/base_generic.html:28
 msgid "All authors"
 msgstr ""
 
-#: catalog/templates/index.html:5
+#: templates/base_generic.html:38
+msgid "previous"
+msgstr ""
+
+#: templates/base_generic.html:41
+msgid "Page"
+msgstr ""
+
+#: templates/base_generic.html:44
+msgid "next"
+msgstr ""
+
+#: templates/catalog/author_detail.html:5 templates/catalog/book_detail.html:7
+msgid "Author"
+msgstr ""
+
+#: templates/catalog/author_detail.html:8
+msgid "Books"
+msgstr ""
+
+#: templates/catalog/author_list.html:5
+msgid "Author List"
+msgstr ""
+
+#: templates/catalog/author_list.html:15
+msgid "There are no authors"
+msgstr ""
+
+#: templates/catalog/book_detail.html:5
+msgid "Title"
+msgstr ""
+
+#: templates/catalog/book_detail.html:8
+msgid "Summary"
+msgstr ""
+
+#: templates/catalog/book_detail.html:9
+msgid "ISBN"
+msgstr ""
+
+#: templates/catalog/book_detail.html:10
+msgid "Language"
+msgstr ""
+
+#: templates/catalog/book_detail.html:11
+msgid "Genre"
+msgstr ""
+
+#: templates/catalog/book_detail.html:14
+msgid "Copies"
+msgstr ""
+
+#: templates/catalog/book_detail.html:22
+msgid "Due to be returned"
+msgstr ""
+
+#: templates/catalog/book_detail.html:24
+msgid "Imprint"
+msgstr ""
+
+#: templates/catalog/book_list.html:5
+msgid "Book List"
+msgstr ""
+
+#: templates/catalog/book_list.html:15
+msgid "There are no books in the library."
+msgstr ""
+
+#: templates/index.html:5
 msgid "Local Library Home"
 msgstr ""
 
-#: catalog/templates/index.html:6
+#: templates/index.html:6
 msgid "Welcome to LocalLibrary, a website developed by "
 msgstr ""
 
-#: catalog/templates/index.html:6
+#: templates/index.html:6
 msgid "Mozilla Developer Network"
 msgstr ""
 
-#: catalog/templates/index.html:7
+#: templates/index.html:7
 msgid "Dynamic content"
 msgstr ""
 
-#: catalog/templates/index.html:8
+#: templates/index.html:8
 msgid "The library has the following record counts:"
 msgstr ""
 
-#: catalog/templates/index.html:10
+#: templates/index.html:10
 msgid "Books:"
 msgstr ""
 
-#: catalog/templates/index.html:11
+#: templates/index.html:11
 msgid "Copies:"
 msgstr ""
 
-#: catalog/templates/index.html:12
+#: templates/index.html:12
 msgid "Copies available:"
 msgstr ""
 
-#: catalog/templates/index.html:13
+#: templates/index.html:13
 msgid "Authors:"
 msgstr ""
