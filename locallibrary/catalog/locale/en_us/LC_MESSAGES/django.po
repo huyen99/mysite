@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 12:32+0700\n"
+"POT-Creation-Date: 2021-08-05 12:59+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/base_generic.html:6
+#: templates/base_generic.html:5
 msgid "Local Library"
 msgstr ""
 
-#: templates/base_generic.html:26
+#: templates/base_generic.html:19
 msgid "Home"
 msgstr ""
 
-#: templates/base_generic.html:27
+#: templates/base_generic.html:20
 msgid "All books"
 msgstr ""
 
-#: templates/base_generic.html:28
+#: templates/base_generic.html:21
 msgid "All authors"
 msgstr ""
 
-#: templates/base_generic.html:38
+#: templates/base_generic.html:32
 msgid "previous"
 msgstr ""
 
-#: templates/base_generic.html:41
+#: templates/base_generic.html:34
 msgid "Page"
 msgstr ""
 
-#: templates/base_generic.html:44
+#: templates/base_generic.html:36
 msgid "next"
 msgstr ""
 
@@ -53,11 +53,11 @@ msgstr ""
 msgid "Books"
 msgstr ""
 
-#: templates/catalog/author_list.html:5
+#: templates/catalog/author_list.html:2
 msgid "Author List"
 msgstr ""
 
-#: templates/catalog/author_list.html:15
+#: templates/catalog/author_list.html:13
 msgid "There are no authors"
 msgstr ""
 
@@ -135,4 +135,12 @@ msgstr ""
 
 #: templates/index.html:13
 msgid "Authors:"
+msgstr ""
+
+#: templates/index.html:15
+msgid "You have visited this page"
+msgstr ""
+
+#: templates/index.html:15
+msgid "time"
 msgstr ""
